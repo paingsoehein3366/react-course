@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import CardList from './components/CardList';
+import AppProvider from './context/Context';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -16,4 +17,8 @@ const router = createBrowserRouter([
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
-root.render(<RouterProvider router={router}></RouterProvider>);
+root.render(
+  <AppProvider>
+    <RouterProvider router={router}></RouterProvider>
+  </AppProvider>
+);
