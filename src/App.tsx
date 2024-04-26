@@ -4,13 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Form from './components/Form'
 import List from './components/List'
+import Menu from './components/Menu'
 
 function App() {
   
   return (
     <>
-      <Form />
-      <List />
+     <Menu/>
    </>
   )
 }
